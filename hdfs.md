@@ -19,6 +19,13 @@ Borrando un conjunto de datos: hdfs dfs -rm (path_hdfs/*)
 
 Borrando un directorio y su contenido hdfs dfs -rm -r (path_directory)
 
+### Visualizar datos en HDFS
+
+ver las primeras n lineas: hdfs dfs -cat (path_hdfs/archive.extension) | tail -n 5
+
+Visualizar las primeras n lineas del archivo: hdfs dfs -cat (path_hdfs/archive.extension) | head -n 20
+
+
 ### Leer archivos Parquet
 
 parquet-tools head archive.parquet
